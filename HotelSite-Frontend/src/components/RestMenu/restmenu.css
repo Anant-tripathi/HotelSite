@@ -1,0 +1,106 @@
+section.restrauntmenu {
+  height: 120vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.75));
+  background-image: none, url("none");
+
+  /* background: */
+  /*   linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.75)), */
+  /*   /* bottom, image  url("../../assets/Menu_food.webp"); */
+
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-attachment: fixed; /* keeps the image fixed as background while other content 
+scrolls over it*/
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.restrauntmenu__header {
+  width: 70%;
+  display: inherit;
+  flex-direction: column;
+  padding-top: 5%;
+}
+
+.restrauntmenu__title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  display: inherit;
+  justify-content: center;
+}
+
+.restrauntmenu__header p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.restrauntmenu__menuContainer {
+  height: 70%;
+  width: 86%;
+  margin-top: 3rem;
+}
+
+.restrauntmenu__menuContainer__menuSection {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.restrauntmenu__menuContainer__menuSection_buttons {
+  height: 15%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.restrauntmenu__menuContainer__menuSection_buttons {
+  font-weight: bold;
+  cursor: pointer;
+}
+.restrauntmenu__menuContainer__menuSection_buttons .btn {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background: transparent;
+  color: #c5af04;
+}
+.restrauntmenu__menuContainer__menuSection_buttons .btn.active {
+  color: #ffffff;
+  padding: 5px;
+  border-bottom: 3px solid #ffffff;
+}
+
+.menuItems-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 11rem);
+  grid-template-columns: repeat(2, 28rem);
+  margin-top: 5rem;
+}
+
+.menuItems-grid-item {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  height: 8rem;
+}
+
+.menuItems-grid-item-price {
+  height: auto;
+  color: #ff8400;
+}
+
+.menuItems-grid-item-name {
+  height: auto;
+  color: #ff8899;
+}
+.menuItems-grid-item-desc {
+  font-size: 1.1rem;
+  margin-block: 7px;
+  height: auto;
+}

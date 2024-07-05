@@ -1,0 +1,13 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Playfair Display";
+}
+section,
+header,
+footer {
+  height: 100vh;
+  width: 100%;
+}

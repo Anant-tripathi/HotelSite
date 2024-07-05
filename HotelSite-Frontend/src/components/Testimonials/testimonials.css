@@ -1,0 +1,76 @@
+.testimonials-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-block: 5rem;
+}
+
+.userTestimonial {
+  display: none;
+}
+.userTestimonial.active {
+  display: flex;
+}
+
+.testimonial-container-userImg {
+  width: 50%;
+}
+
+.testimonial-container-userImg img {
+  height: 30rem;
+  width: 30rem;
+  margin: 3rem 5rem;
+  clip-path: circle();
+}
+.userTestimonial-subContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.testimonial-container-userTestimonial {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  text-align: justify;
+  margin-right: 7rem;
+}
+.testimonial-container-userDesc p {
+  margin-block: 2rem 0.4rem;
+  font-size: 1.5rem;
+  color: rgb(93 92 92);
+}
+.testimonial-container-userDesc {
+  font-size: 2rem;
+}
+
+.dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dots-container .dot {
+  background: #7d7d7d91;
+}
+
+.dots-container .dot.active {
+  border: 2px solid #636363;
+  background: #717171bd;
+}
+.dots-container .prev,
+.dots-container .next {
+  margin: 2rem 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.dots-container .prev:hover,
+.dots-container .next:hover {
+  cursor: pointer;
+}
