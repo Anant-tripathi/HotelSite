@@ -9,7 +9,9 @@ const Welcome = lazy(() => import("./components/Welcome/Welcome.jsx"));
 const RoomOpts = lazy(() => import("./components/RoomsOpts/RoomsOpts.jsx"));
 const Photos = lazy(() => import("./components/Photos/Photos.jsx"));
 const RestMenu = lazy(() => import("./components/RestMenu/RestMenu.jsx"));
-const Testimonials = lazy(() => import("./components/Testimonials/Testimonials.jsx"));
+const Testimonials = lazy(
+	() => import("./components/Testimonials/Testimonials.jsx"),
+);
 const Events = lazy(() => import("./components/Events/Events.jsx"));
 const Footer = lazy(() => import("./components/Footer/Footer.jsx"));
 
@@ -17,19 +19,19 @@ function App() {
 	const [showModal, setShowModal] = useState(false);
 
 	const handleOpenModal = () => {
-	  setShowModal(true);
+		setShowModal(true);
 	};
-  
+
 	const handleCloseModal = () => {
-	  setShowModal(false);
+		setShowModal(false);
 	};
 	return (
 		<>
 			<Header />
 			<Hero />
 			<Suspense fallback={<div>Loading...</div>}>
-				<Welcome  onOpenModal={handleOpenModal}  />
-				<Modal show={showModal} onClose={handleCloseModal}/>
+				<Welcome onOpenModal={handleOpenModal} />
+				<Modal show={showModal} onClose={handleCloseModal} />
 				<RoomOpts />
 				<Photos />
 				<RestMenu />
