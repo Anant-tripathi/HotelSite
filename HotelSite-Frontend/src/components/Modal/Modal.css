@@ -27,18 +27,31 @@
   height: 100%;
   width: 100%;
 }
+
+.modal-content > h1 {
+  margin: 0;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .modal-content form {
   padding-inline: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.left-form, .right-form{
+.left-form,
+.right-form {
   width: 48%;
   display: grid;
   grid-template-columns: repeat(50%, 2);
-  grid-template-rows: repeat( 1fr, 8);
+  grid-template-rows: repeat(1fr, 8);
   gap: 10px;
+}
+.left-form > h2,
+.right-form > h2 {
+  height: 5rem;
 }
 .form-input {
   width: 100%;
@@ -51,15 +64,58 @@
   height: 40px;
   border-radius: 4px;
   width: 48%;
+  text-align: center;
 }
-.date-picker{
+.datePicker-container {
+  display: flex;
+}
+.datePicker-container > div {
+  display: block;
+  width: 50%;
+  line-height: 0px;
+}
+.datePicker-container > div:focus {
+  position: absolute;
+  width: 244px;
+}
+.datePicker-container > div > div {
+  display: block;
+}
+.react-datepicker__tab-loop + .datePicker-container > div {
+  position: absolute;
+  width: 344px;
+}
+#arrivalDate,
+#departureDate {
+  margin: 0px;
+  padding: 0px;
+  width: 96%;
   border: 1px solid black;
   height: 40px;
   border-radius: 4px;
-  width: 48%;
 }
-#address{
+#arrivalDate:active,
+#departureDate:active,
+#arrivalDate:focus,
+#departureDate:focus {
+  margin: 0;
+  padding: 0;
+  width: 96%;
+  border: 1px solid black;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+}
+#departureDate {
+  margin-left: 13px;
+}
+#address {
   width: 100%;
+}
+
+#specialRequests {
+  width: 688px;
+  height: 67px;
 }
 .modal-close {
   position: absolute;

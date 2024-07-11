@@ -1,0 +1,34 @@
+# Dependency directories
+node_modules/
+
+# Build directories
+dist/
+build/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Coverage reports
+coverage/
+
+# Temporary files
+tmp/
+temp/
+
